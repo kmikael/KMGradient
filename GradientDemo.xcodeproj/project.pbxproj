@@ -14,6 +14,7 @@
 		64B9623F19D9F29C0013B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B9623E19D9F29C0013B166 /* Images.xcassets */; };
 		64B9624219D9F29C0013B166 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B9624019D9F29C0013B166 /* LaunchScreen.xib */; };
 		64B9624E19D9F29C0013B166 /* GradientDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B9624D19D9F29C0013B166 /* GradientDemoTests.m */; };
+		64B9625919D9F2D00013B166 /* KMGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B9625819D9F2D00013B166 /* KMGradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		64B9624719D9F29C0013B166 /* GradientDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B9624C19D9F29C0013B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B9624D19D9F29C0013B166 /* GradientDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientDemoTests.m; sourceTree = "<group>"; };
+		64B9625719D9F2D00013B166 /* KMGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KMGradient.h; path = KMGradient/KMGradient.h; sourceTree = "<group>"; };
+		64B9625819D9F2D00013B166 /* KMGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KMGradient.m; path = KMGradient/KMGradient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				64B9623619D9F29C0013B166 /* AppDelegate.m */,
 				64B9623819D9F29C0013B166 /* ViewController.h */,
 				64B9623919D9F29C0013B166 /* ViewController.m */,
+				64B9625719D9F2D00013B166 /* KMGradient.h */,
+				64B9625819D9F2D00013B166 /* KMGradient.m */,
 				64B9623B19D9F29C0013B166 /* Main.storyboard */,
 				64B9623E19D9F29C0013B166 /* Images.xcassets */,
 				64B9624019D9F29C0013B166 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B9623A19D9F29C0013B166 /* ViewController.m in Sources */,
+				64B9625919D9F2D00013B166 /* KMGradient.m in Sources */,
 				64B9623719D9F29C0013B166 /* AppDelegate.m in Sources */,
 				64B9623419D9F29C0013B166 /* main.m in Sources */,
 			);
