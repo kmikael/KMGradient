@@ -6,7 +6,7 @@
 
 Because creating and drawing a gradient with `Core Graphics` functions is super-tedious.
 
-## Example
+## Examples
 
     NSArray *colors = @[[UIColor redColor], [UIColor yellowColor]];
     NSArray *locations = @[@0.0, @1.0];
@@ -18,6 +18,19 @@ Because creating and drawing a gradient with `Core Graphics` functions is super-
     [gradient drawWithStartPoint:startPoint endPoint:endPoint options:options];
 
 ![KMGradient Screenshot](http://f.cl.ly/items/3I3N36373c1O1B2y2Z2d/Gradient.png)
+
+    NSArray *colors = @[[UIColor redColor], [UIColor yellowColor]];
+    NSArray *locations = @[@0.0, @1.0];
+    KMRadialGradient *radialGradient = [KMRadialGradient gradientWithColors:colors locations:locations];
+    
+    CGPoint startCenter = CGPointMake(CGRectGetWidth(rect) / 2.0, CGRectGetHeight(rect) / 2.0);
+    CGFloat startRadius = CGRectGetWidth(rect) / 2.0;
+    CGPoint endCenter = startCenter;
+    CGFloat endRadius = startRadius / 2.0;
+    KMGradientDrawingOptions options = KMGradientDrawingOptionsDrawsAfterEndLocation | KMGradientDrawingOptionsDrawsBeforeStartLocation;
+    [radialGradient drawWithStartCenter:startCenter startRadius:startRadius endCenter:endCenter endRadius:endRadius options:options];
+
+![KMGradient Screenshot 2](http://f.cl.ly/items/33373R2z0x3G271r1C29/RadialGradient.png)
 
 ## Contributing
 
